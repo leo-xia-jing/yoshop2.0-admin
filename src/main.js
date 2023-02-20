@@ -8,10 +8,6 @@ import router from './router'
 import store from './store/'
 import { VueAxios } from './utils/request'
 
-// mock
-// 引入mock模拟后端api请求, 正式环境需删除该行
-// import './mock'
-
 import bootstrap from './core/bootstrap'
 import './core/lazy_use'
 import './permission' // permission control

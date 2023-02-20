@@ -49,7 +49,6 @@ import {
   message,
   notification
 } from 'ant-design-vue'
-// import VueCropper from 'vue-cropper'
 
 import Tree from '@/components/tree'
 
@@ -91,7 +90,6 @@ Vue.use(Upload)
 Vue.use(Progress)
 Vue.use(Skeleton)
 Vue.use(Popconfirm)
-// Vue.use(VueCropper)
 Vue.use(notification)
 
 Vue.use(Tree)
