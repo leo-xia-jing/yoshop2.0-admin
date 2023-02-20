@@ -19,7 +19,7 @@ import {
   getListeners,
   getComponentFromProp
 } from 'ant-design-vue/es/_util/props-util'
-import { ConfigConsumerProps } from 'ant-design-vue/es/config-provider'
+import { ConfigConsumerProps } from 'ant-design-vue/es/config-provider/configConsumerProps'
 
 // export type ExpandAction = false | 'click' | 'dblclick'; export interface
 // DirectoryTreeProps extends TreeProps {   expandAction?: ExpandAction; }

@@ -11,7 +11,7 @@ import {
   getListeners
 } from 'ant-design-vue/es/_util/props-util'
 import { cloneElement } from 'ant-design-vue/es/_util/vnode'
-import { ConfigConsumerProps } from 'ant-design-vue/es/config-provider'
+import { ConfigConsumerProps } from 'ant-design-vue/es/config-provider/configConsumerProps'
 import Icon from 'ant-design-vue/es/icon'
 import './style';
 
