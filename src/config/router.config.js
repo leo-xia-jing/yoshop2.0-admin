@@ -56,7 +56,7 @@ export const asyncRouterMap = [
         path: 'setting',
         redirect: '/setting/cache/clear',
         component: PageView,
-        meta: { title: '系统设置', keepAlive: false, icon: Icon['setting'], permission: ['setting'] },
+        meta: { title: '系统管理', keepAlive: false, icon: Icon['setting'], permission: ['setting'] },
         children: [
           {
             path: '/setting/cache',

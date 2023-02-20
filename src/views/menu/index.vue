@@ -74,7 +74,7 @@ export default {
   data () {
     return {
       // 提示文字
-      warningText: '此处用于管理商户后台的菜单，请勿对本页面数据进行更改',
+      warningText: '此处用于管理商户后台的菜单数据，请勿对本页面数据进行更改（会导致系统无法更新升级）',
       // 正在加载
       isLoading: false,
       // 表头

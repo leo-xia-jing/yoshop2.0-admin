@@ -50,7 +50,7 @@ export default {
       }
     },
 
-    // 系统设置
+    // 系统管理
     setting: {
       cache: {
         clear: 'setting.cache/clear'
