@@ -11,30 +11,29 @@
     />
 
     <!-- layout axis -->
-    <a-layout
-      :class="[layoutMode, `content-width-${contentWidth}`]"
-      :style="{ paddingLeft: contentPaddingLeft, minHeight: '87vh', width: '1500px', margin: '0 auto' }"
-    >
-      <!-- layout sidemenu -->
-      <side-menu
-        v-if="isSideMenu()"
-        mode="inline"
-        :menus="menus"
-        :theme="navTheme"
-        :collapsed="collapsed"
-        :collapsible="true"
-      ></side-menu>
+    <a-layout :class="[layoutMode, `content-width-${contentWidth}`]">
+      <div class="container" :style="{ paddingLeft: contentPaddingLeft}">
+        <!-- layout sidemenu -->
+        <side-menu
+          v-if="isSideMenu()"
+          mode="inline"
+          :menus="menus"
+          :theme="navTheme"
+          :collapsed="collapsed"
+          :collapsible="true"
+        ></side-menu>
 
-      <!-- layout content -->
-      <a-layout-content :style="{ height: '100%' }">
-        <transition name="page-transition">
-          <route-view />
-        </transition>
-      </a-layout-content>
+        <!-- layout content -->
+        <a-layout-content :style="{ height: '100%' }">
+          <transition name="page-transition">
+            <route-view />
+          </transition>
+        </a-layout-content>
 
-      <!-- 主题修改器 -->
-      <!-- Setting Drawer (show in development mode) -->
-      <!-- <setting-drawer v-if="!production && false"></setting-drawer> -->
+        <!-- 主题修改器 -->
+        <!-- Setting Drawer (show in development mode) -->
+        <!-- <setting-drawer v-if="!production && false"></setting-drawer> -->
+      </div>
     </a-layout>
 
     <!-- layout footer -->
@@ -135,7 +134,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 /*
  * The following styles are auto-applied to elements with
  * transition="page-transition" when their visibility is toggled
@@ -157,5 +156,33 @@ export default {
 .page-transition-leave-active .page-transition-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  min-height: 87vh;
+  max-width: 1500px;
+  min-width: 1000px;
+  margin: 0px auto;
+}
+
+@media only screen and (max-width: 1500px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    max-width: 1250px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    max-width: 1150px;
+  }
 }
 </style>
