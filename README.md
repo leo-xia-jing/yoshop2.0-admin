@@ -8,15 +8,11 @@
 环境和依赖
 ----
 
-- node
-- yarn
-- webpack
-- eslint
-- @vue/cli ~3
+- node — v18.12.1
+- yarn — v8.19.2
+- npm — v1.22.19
+
 - [ant-design-vue](https://github.com/vueComponent/ant-design-vue) - Ant Design Of Vue 实现
-
-> 请注意，我们强烈建议本项目使用 [Yarn](https://yarnpkg.com/) 包管理工具，这样可以与本项目演示站所加载完全相同的依赖版本 (yarn.lock) 。由于我们没有对依赖进行强制的版本控制，采用非 yarn 包管理进行引入时，可能由于 Pro 所依赖的库已经升级版本而引入了新版本所导致的问题。作者可能会由于时间问题无法及时排查而导致您采用本项目作为基项目而出现问题。
-
 
 
 项目运行和发布
@@ -30,17 +26,18 @@
 
 - 安装依赖
 ```
+yarn config set ignore-engines true
 yarn install
 ```
 
 - 开发模式运行
 ```
-yarn run serve
+yarn serve
 ```
 
 - 编译项目
 ```
-yarn run build
+yarn build
 ```
 
 - 发布项目
