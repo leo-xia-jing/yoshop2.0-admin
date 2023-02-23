@@ -16,7 +16,6 @@ import AvatarList from '@/components/AvatarList'
 import CountDown from '@/components/CountDown'
 import Ellipsis from '@/components/Ellipsis'
 import FooterToolbar from '@/components/FooterToolbar'
-import NumberInfo from '@/components/NumberInfo'
 import DescriptionList from '@/components/DescriptionList'
 // import Tree from '@/components/Tree/Tree'
 import Trend from '@/components/Trend'
@@ -52,7 +51,6 @@ export {
   CountDown,
   Ellipsis,
   FooterToolbar,
-  NumberInfo,
   DescriptionList,
   // 兼容写法，请勿继续使用
   DescriptionList as DetailList,
