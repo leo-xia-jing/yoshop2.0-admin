@@ -26,17 +26,12 @@
 </template>
 
 <script>
-import NoticeIcon from '@/components/NoticeIcon'
 import { mapActions, mapGetters } from 'vuex'
 
 export default {
   name: 'UserMenu',
-  components: {
-    NoticeIcon
-  },
   computed: {
     ...mapGetters(['nickname', 'avatar'])
-
   },
   methods: {
     ...mapActions(['Logout']),

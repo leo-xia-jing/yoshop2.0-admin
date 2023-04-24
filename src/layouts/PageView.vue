@@ -12,13 +12,9 @@
 
 <script>
 import { mapState } from 'vuex'
-import PageHeader from '@/components/PageHeader'
 
 export default {
   name: 'PageView',
-  components: {
-    PageHeader
-  },
   props: {
     avatar: {
       type: String,
