@@ -13,12 +13,9 @@
       showPagination="auto"
       :pageSize="15"
     >
-      <span slot="action" slot-scope="text, item">
-        <template>
-          <a @click="handleInto(item)">进入商城</a>
-          <a-divider type="vertical" />
-          <a @click="handleDelete(item)">删除</a>
-        </template>
+      <span class="actions" slot="action" slot-scope="text, item">
+        <a @click="handleInto(item)">进入商城</a>
+        <a @click="handleDelete(item)">删除</a>
       </span>
     </s-table>
     <create-form ref="createModal" @handleSubmit="handleRefresh" />
