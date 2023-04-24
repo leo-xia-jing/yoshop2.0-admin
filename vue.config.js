@@ -81,6 +81,7 @@ const vueConfig = {
 
           // 'primary-color': '#F5222D',
           // 'link-color': '#F5222D',
+          'font-size-base': '13px',
           'border-radius-base': '2px'
         },
         // DO NOT REMOVE THIS LINE
@@ -110,7 +111,7 @@ const vueConfig = {
 
   // disable source map in production
   productionSourceMap: false,
-  lintOnSave: undefined,
+  lintOnSave: false,
   // babel-loader no-ignore node_modules/*
   transpileDependencies: []
 }
