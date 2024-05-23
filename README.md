@@ -8,9 +8,9 @@
 环境和依赖
 ----
 
-- node — v18.12.1
-- yarn — v8.19.2
-- npm — v1.22.19
+- node — v18.16.0
+- npm — v9.6.5
+- yarn — v1.22.19
 
 - [ant-design-vue](https://github.com/vueComponent/ant-design-vue) - Ant Design Of Vue 实现
 
